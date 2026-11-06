@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Rasmalaiii 💗</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;overflow-x:hidden;text-align:center;color:#fff4e5;font-family:Georgia,serif;background:radial-gradient(ellipse at top,#5b1b4d 0%,#261039 48%,#090817 100%)}
+.lights{position:fixed;inset:0 0 auto;height:7px;background:repeating-linear-gradient(90deg,#ffe7a2 0 7px,transparent 7px 23px);box-shadow:0 0 18px #ffbd55;z-index:3}
+.glow{position:fixed;width:220px;height:220px;border-radius:50%;filter:blur(85px);opacity:.18;pointer-events:none}.g1{top:10%;left:-100px;background:#ffb52e}.g2{right:-100px;bottom:8%;background:#ff4c9b}
+main{width:min(92%,650px);margin:auto;padding:60px 0 42px;position:relative;z-index:1}.eyebrow{font:11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#ffdc9a}
+h1{font-size:clamp(2.7rem,10vw,4.6rem);line-height:1.06;margin:18px 0 10px;color:#ffe7aa;text-shadow:0 0 25px #ff9d45}
+.subtitle{font:15px/1.8 Arial,sans-serif;color:#f5dff0}.diyas{display:flex;justify-content:center;gap:25px;margin:27px auto}.diya{font-size:42px;filter:drop-shadow(0 0 12px #ffb32f);animation:flicker 1.6s infinite alternate}.diya:nth-child(2){animation-delay:.5s}.diya:nth-child(3){animation-delay:1s}@keyframes flicker{to{transform:translateY(-5px) scale(1.08)}}
+.card{background:#ffffff0d;border:1px solid #ffdd9e55;border-radius:25px;padding:25px 19px;box-shadow:0 15px 45px #0004;backdrop-filter:blur(8px)}
+h2{font-weight:normal;color:#ffe6a3;font-size:1.55rem}button{border:0;border-radius:999px;padding:14px 21px;margin:8px 4px;cursor:pointer;font:bold 14px Arial,sans-serif;color:#32102f;background:linear-gradient(135deg,#ffe7a2,#ffb84e);box-shadow:0 0 20px #ffbd6544}
+#letter{display:none;text-align:left;white-space:pre-line;font:15px/1.95 Arial,sans-serif;color:#fff0f7;margin-top:23px;border-top:1px solid #ffffff2c;padding-top:20px}
+#final{display:none;margin-top:20px;color:#ffe1a2;font-size:1.3rem;line-height:1.8}.small{font:12px/1.7 Arial,sans-serif;color:#d6bad8;margin-top:25px}
+.spark{position:fixed;pointer-events:none;z-index:0;animation:rise 4s linear forwards}@keyframes rise{from{transform:translateY(0) scale(.7);opacity:0}15%{opacity:1}to{transform:translateY(-95vh) scale(1.2);opacity:0}}
+</style></head>
+<body><div class="lights"></div><div class="glow g1"></div><div class="glow g2"></div>
+<main>
+<div class="eyebrow">A little piece of my heart, made just for you</div>
+<h1>Happy Diwali ✨</h1>
+<p class="subtitle">For my favourite Rasmalaiii… 💗<br>Some lights shine in the sky, and some people make life brighter just by being in it.</p>
+<div class="diyas"><span class="diya">🪔</span><span class="diya">✨</span><span class="diya">🪔</span></div>
+<section class="card">
+<h2>Rasmalaiii, this is for you 💌</h2>
+<p class="subtitle">I had a little something to tell you…<br>so I made you your own tiny Diwali corner. 🥹</p>
+<button onclick="openLetter()">Open your little letter 💗</button>
+<div id="letter">Happyyy Diwaliii, my Rasmalaiii 🪔💗
+
+First of all, thank youuu for being in my life. 🥹❤️ I don't think you realise how special you are to me. Having you in my life is something I'm genuinely thankful for, and I'm so happy that I get to share little moments, smiles, and memories with you.
+
+I wanted to make something different for you this Diwali — not just send a normal “Happy Diwali” message, but make you feel a little extra special, because YOU are special to me. ✨
+
+And you know what I really hope? That we get to celebrate Diwali together every year… making new memories, laughing over silly things, sharing happiness, and looking back at all the Diwalis we've spent together. 🪔🥹 I hope this becomes our little tradition, year after year.
+
+Until then, here's a tiny reminder: I'm really grateful you're here, Rasmalaiii. Thank you for being you, and for being a part of my life. I hope this Diwali brings you all the happiness your heart deserves. 💖
+
+You have a special place in my heart — today, this Diwali, and in all the little moments still waiting for us. 🌙✨
+
+Happy Diwali once again, Rasmalaiii.
+Sending you the biggest virtual hug and lots and lots of loveee. 💗🫶
+
+— From someone who's really glad she has you ❤️</div>
+<button onclick="showFinal()">Wait… one last thing 🎆</button>
+<div id="final">My Diwali wish? ✨<br>More Diwalis, more memories, more smiles… with you. 🪔💗<br><span style="font-size:2rem">Rasmalaiii ♡</span></div>
+</section><p class="small">Made with love, just for you • Tap both buttons for your surprises ✨</p>
+</main>
+<script>
+function openLetter(){document.getElementById('letter').style.display='block';burst()}
+function showFinal(){document.getElementById('final').style.display='block';burst()}
+function burst(){const symbols=['✨','💖','🌟','🎆','💕','🪔'];for(let i=0;i<34;i++){const s=document.createElement('span');s.className='spark';s.textContent=symbols[Math.floor(Math.random()*symbols.length)];s.style.left=Math.random()*100+'vw';s.style.top=(55+Math.random()*40)+'vh';s.style.fontSize=(14+Math.random()*20)+'px';s.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),6500)}}
+</script></body></html>
